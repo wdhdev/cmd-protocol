@@ -2,7 +2,7 @@
 A simple `cmd://` protocol which runs commands in your terminal through your browser.
 
 ## ⚠️ Warning
-Websites can use this protocol maliciously, so if you ever get a pop-up for it when you didn't run it, click `Cancel` so the command doesn't run.
+Websites may use this protocol maliciously, so if you ever get a pop-up for it when you didn't run it voluntarily, click `Cancel` so the command doesn't run.
 
 But don't worry if you click open, the executable will still ask for a confirmation before running the command.
 
