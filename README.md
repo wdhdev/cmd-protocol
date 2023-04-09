@@ -1,6 +1,9 @@
 # 🌐 cmd:// Protocol
 A simple `cmd://` protocol which runs commands in your terminal through your browser.
 
+### Command Executor
+The source code to `Command Executor.exe` is available in the GitHub repository, [`cmd-protocol/command-executor`](https://github.com/cmd-protocol/command-executor).
+
 ## ⚠️ Warning
 Websites may use this protocol maliciously, so if you ever get a pop-up for it when you didn't run it voluntarily, click `Cancel` so the command doesn't run.
 
