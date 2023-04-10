@@ -72,7 +72,7 @@ xcopy "cmd.exe" "%HOMEDRIVE%\Protocols\" /E /C /H /R /K /O /Y >nul
 echo [32mCopied "cmd.exe" to "%HOMEDRIVE%\Protocols\cmd.exe".[0m
 
 echo:
-echo [35mThe "cmd://" protocol has been registered.[0m
+echo [95mThe "cmd://" protocol has been registered.[0m
 echo:
 
 pause
