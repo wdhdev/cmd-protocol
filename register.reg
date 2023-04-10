@@ -9,4 +9,4 @@
 [HKEY_CLASSES_ROOT\cmd\shell\open]
 
 [HKEY_CLASSES_ROOT\cmd\shell\open\command]
-@="\"C:\\Protocols\\cmd\\Command Executor.exe\" \"%1\""
+@="\"%HOMEDRIVE%\\Protocols\\cmd.exe\" \"%1\""
