@@ -5,8 +5,7 @@ A simple `cmd://` protocol which runs commands in your terminal through your bro
 1. Download the [repository](https://github.com/cmd-protocol/cmd-protocol/archive/refs/heads/main.zip) files.
 2. Extract the zip file.
 3. Open the extracted folder and then click on `cmd-protocol-main` folder.
-4. Run the `setup.bat` file and when asked for Administrator privileges, click `Yes`.
-    - The batch file registers the registry values stored in `register.reg` and copies the `cmd.exe` file to the required file location.
+4. Run the `setup.exe` file and when asked for Administrator privileges, click `Yes`.
 5. Try it out!
     - In your browser, in the URL bar, type something like [`cmd://help`](cmd://help) and run the protocol.
 
