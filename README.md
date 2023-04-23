@@ -1,5 +1,5 @@
 # 🌐 cmd:// Protocol
-A simple `cmd://` protocol which runs commands in your terminal through your browser.
+A simple browser protocol which runs commands in your terminal through your browser.
 
 ## 🖱️ Setting Up
 1. Download the [repository](https://github.com/cmd-protocol/cmd-protocol/archive/refs/heads/main.zip) files.
