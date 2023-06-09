@@ -38,7 +38,6 @@ jobs:
 
             - name: Commit
               run: |
-                  ls
                   git config --global user.email "bot@williamharrison.dev"
                   git config --global user.name "WDH-Bot"
                   git add cmd.exe
