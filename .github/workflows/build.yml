@@ -1,0 +1,52 @@
+name: Build
+
+on:
+    push:
+        branches: [main]
+        paths:
+            - "cmd/**"
+            - "setup/**"
+
+    workflow_dispatch:
+
+jobs:
+    executables:
+        name: Executables
+        runs-on: windows-latest
+
+        steps:
+            - uses: actions/checkout@v3
+
+            - uses: actions/setup-python@v4
+              with:
+                  python-version: "3.11"
+
+            - name: Install Dependencies
+              run: |
+                  python -m pip install --upgrade pip
+                  pip install pyinstaller
+
+            - name: Remove Files
+              run: |
+                  rm cmd.exe
+                  rm setup.exe
+
+            - name: Build cmd.exe
+              run: |
+                  cd cmd
+                  pyinstaller --onefile --icon "../images/logo.ico" --distpath=../ cmd.py
+
+            - name: Build setup.exe
+              run: |
+                  cd setup
+                  pyinstaller --onefile --icon "../images/logo.ico" --distpath=../ setup.py
+
+            - name: Commit
+              run: |
+                  ls
+                  git config --global user.email "bot@williamharrison.dev"
+                  git config --global user.name "WDH-Bot"
+                  git add cmd.exe
+                  git add setup.exe
+                  git commit -m "chore: build executables"
+                  git push
