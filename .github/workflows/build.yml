@@ -4,8 +4,8 @@ on:
     push:
         branches: [main]
         paths:
-            - "cmd/**"
-            - "setup/**"
+            - "cmd/**.py"
+            - "setup/**.py"
 
     workflow_dispatch:
 
