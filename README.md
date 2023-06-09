@@ -1,8 +1,10 @@
 # 🌐 cmd:// Protocol
 A simple browser protocol which runs commands in your terminal through your browser.
 
-## 🖱️ Setting Up
-1. Download the [repository](https://github.com/cmd-protocol/cmd-protocol/archive/refs/heads/main.zip) files.
+[![Build](https://github.com/cmd-protocol/cmd-protocol/actions/workflows/build.yml/badge.svg)](https://github.com/cmd-protocol/cmd-protocol/actions/workflows/build.yml)
+
+## 🪄 Setting Up
+1. [Download](https://github.com/cmd-protocol/cmd-protocol/archive/refs/heads/main.zip) the repository files.
 2. Extract the zip file.
 3. Open the extracted folder and then click on `cmd-protocol-main` folder.
 4. Run the `setup.exe` program and when asked for Administrator privileges, click `Yes`.
