@@ -28,8 +28,8 @@ jobs:
 
             - name: Remove Files
               run: |
-                  rm cmd.exe
-                  rm setup.exe
+                  rm cmd.exe ||:
+                  rm setup.exe ||:
 
             - name: Build cmd.exe
               run: |
