@@ -9,55 +9,42 @@ ctypes.windll.shell32.IsUserAnAdmin() or (
     ) > 32, exit())
 
 if os.path.isfile("./cmd.exe"):
-    os.system("echo ✔️ cmd.exe exists")
+    print("✔️ cmd.exe exists")
 else:
-    os.system("echo ✖️ cmd.exe does not exist")
-    print()
+    print("✖️ cmd.exe does not exist\n")
 
     os.system("pause")
     sys.exit()
 
 if os.path.isfile("./register.reg"):
-    os.system("echo ✔️ register.reg exists")
+    print("✔️ register.reg exists\n")
 else:
-    os.system("echo ✖️ register.reg does not exist")
-    print()
+    print("✖️ register.reg does not exist\n")
 
     os.system("pause")
     sys.exit()
 
-print()
-
 # Add registry values
-os.system("echo ➕ Adding required values to registry...")
+print("➕ Adding required values to registry...")
 os.system("regedit.exe /S register.reg >nul")
-os.system("echo ✔️ Added required values to the registry.")
-
-print()
+print("✔️ Added required values to the registry\n")
 
 # Create C:\Protocols directory
 if os.path.isdir("C:\Protocols"):
-    os.system("echo ✔️ \"C:\Protocols\" exists")
+    print("✔️ \"C:\Protocols\" exists\n")
 else:
-    os.system("echo ✖️ \"C:\Protocols\" does not exist")
-    print()
+    print("✖️ \"C:\Protocols\" does not exist")
 
-    os.system("echo ➕ Creating directory \"C:\Protocols\"...")
+    print("➕ Creating directory \"C:\Protocols\"...")
     os.mkdir("C:\Protocols")
-    os.system("echo ✔️ Created directory \"C:\Protocols\".")
-
-print()
+    print("✔️ Created directory \"C:\Protocols\"\n")
 
 # Copy cmd.exe
-os.system("echo ➕ Copying \"cmd.exe\" to \"C:\Protocols\cmd.exe\"...")
+print("➕ Copying \"cmd.exe\" to \"C:\Protocols\cmd.exe\"...")
 os.system("xcopy \"cmd.exe\" \"C:\Protocols\" /E /C /H /R /K /O /Y >nul")
-os.system("echo ✔️ Copied \"cmd.exe\" to \"C:\Protocols\cmd.exe\".")
+print("✔️ Copied \"cmd.exe\" to \"C:\Protocols\cmd.exe\"\n")
 
-print()
-
-os.system("echo ✔️ The \"cmd://\" protocol has been registered.")
-
-print()
+print("✔️ The \"cmd://\" protocol has been registered.\n")
 
 os.system("pause")
 sys.exit()
